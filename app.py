@@ -12,7 +12,7 @@ import gdown
 model_path = "plant_disease_model.keras"  # or "plant_disease_model.h5" or "plant_disease_model"
 
 if not os.path.exists(model_path):
-    url = "https://drive.google.com/uc?id=d/1Sy3VPGK5F502z1YXiZi0SXGQ9KWWEUxs"
+    url = "https://drive.google.com/uc?id=1Sy3VPGK5F502z1YXiZi0SXGQ9KWWEUxs"
     gdown.download(url, model_path, quiet=False)
 
 st.set_page_config(
@@ -105,4 +105,5 @@ if uploaded_file is not None:
         </div>
         """,
         unsafe_allow_html=True
+
     )
